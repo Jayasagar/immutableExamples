@@ -16,7 +16,7 @@ describe('is', ()=>{
         assert.isTrue(is(map1, map2));
     });
     
-    it('different immutabke and plain js objects are not equal', ()=> {
+    it('different immutable and plain js objects are not equal', ()=> {
        const map1 = Map({a:1, b:{c:4}});
         const map2 = Map({a:1,b:Map({c:4})});
         
